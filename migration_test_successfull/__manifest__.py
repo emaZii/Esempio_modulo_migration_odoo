@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name': 'test_migration',
-    'version': '17.0.1.10',
+    'version': '17.0.1.1',
     'category': 'Accounting/Accounting',
     'summary': 'Manage financial and analytic accounting',
     'depends': ['hr', 'hr_contract'], # Fondamentale: serve per vedere i menu HR
@@ -13,3 +13,4 @@
     'installable': True,
     
 }
+
