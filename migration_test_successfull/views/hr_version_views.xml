@@ -1,0 +1,27 @@
+<odoo>
+    <record id="view_hr_version_tree" model="ir.ui.view">
+        <field name="name">hr.version.tree</field>
+        <field name="model">hr.version</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date_version"/>
+                <field name="employee_id"/>
+                <field name="contract_id"/>
+                <field name="wage"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_hr_version" model="ir.actions.act_window">
+        <field name="name">Versioni Contratti</field>
+        <field name="res_model">hr.version</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_hr_version" 
+              name="Versioni Contratti" 
+              parent="hr.menu_hr_root" 
+              action="action_hr_version" 
+              sequence="20"/>
+</odoo>
